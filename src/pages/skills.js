@@ -3,21 +3,16 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Logo from '../components/Logo'
 
-const IndexPage = () => (
+const Skills = () => (
   <Layout>
-    <SEO title='Home' />
-    <Logo />
-
+    <SEO title='Skills' />
     <div
       style={{ display: "flex", alignItems: "center", flexDirection: "column" }}
     >
-      <p>California based web devloper.</p>
+      <h1>Skills</h1>
     </div>
   </Layout>
 )
 
-export default IndexPage
+export default Skills

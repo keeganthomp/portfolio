@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import KnifeLogo from "../images/logo-with-name.png"
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,20 +14,31 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+const Logo = () => {
+  const logoData = useStaticQuery(graphql`
+    query LogoQuery {
+      imageSharp {
+        id
+      }
+      file(relativePath: { eq: "logo-with-name.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
           }
         }
       }
     }
   `)
-
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      style={{ maxWidth: "25rem", margin: "1rem auto" }}
+      fluid={logoData.file.childImageSharp.fluid}
+    />
+  )
 }
 
-export default Image
+export default Logo
