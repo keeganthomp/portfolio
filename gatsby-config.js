@@ -1,16 +1,24 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Keegan Thompson`,
+    description: `Keegan Thompson's portfolio`,
+    author: `Keegan Thompson`,
     menuLinks: [
       {
-        name: "home",
+        name: "Homepage",
         link: "/",
       },
       {
-        name: "page2",
-        link: "/page-2",
+        name: "About",
+        link: "/about",
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+      {
+        name: "Skills",
+        link: "/skills",
       },
     ],
   },
@@ -25,6 +33,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

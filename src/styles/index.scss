@@ -1,0 +1,55 @@
+// initializing all sass variables here so they will be available to all stylesheets
+$medium-down: 'max-width: 768px';
+$medium-up: 'min-width: 768px';
+
+@import 'layout';
+@import 'navigation';
+@import 'homepage';
+@import 'contact';
+@import 'skills';
+@import 'about';
+
+body {
+  font-family: sans-serif;
+}
+
+.page-content {
+  &_title {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+  }
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_block {
+    margin: 1.5rem 4rem;
+  }
+}
+
+@media ($medium-down) {
+  .page-content {
+    &_title {
+      margin: .5rem 0;
+      font-size: 1.75rem;
+    }
+    &_wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &_block {
+      margin: .5rem .25rem;
+    }
+  }
+  footer {
+    display: none;
+  }
+}
+
+footer {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.25rem;
+}

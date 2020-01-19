@@ -13,13 +13,13 @@ import Img from 'gatsby-image'
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Logo = ({ width }) => {
+const MyPhoto = () => {
   const logoData = useStaticQuery(graphql`
-    query LogoQuery {
+    query MyPhoto {
       imageSharp {
         id
       }
-      file(relativePath: { eq: "logo-without-name.png" }) {
+      file(relativePath: { eq: "puppy.jpg" }) {
         childImageSharp {
           fluid {
             aspectRatio
@@ -33,11 +33,13 @@ const Logo = ({ width }) => {
     }
   `)
   return (
-    <Img
-      style={{ width }}
-      fluid={logoData.file.childImageSharp.fluid}
-    />
+    <div className='homepage_my-photo-container'>
+      <Img
+        style={{ margin: '1rem auto', position: 'initial' }}
+        fluid={logoData.file.childImageSharp.fluid}
+      />
+    </div>
   )
 }
 
-export default Logo
+export default MyPhoto

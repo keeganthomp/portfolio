@@ -1,0 +1,12 @@
+.contact-page {
+  &_contact-block {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: .5rem;
+  }
+  &_social-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+  }
+}

@@ -1,0 +1,10 @@
+.about {
+  &_my-photo-container {
+    width: $homepage-image-size;
+    height: $homepage-image-size;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}
