@@ -1,5 +1,9 @@
-.skills-page {
-  &_skill-column {
-    margin: 0 3rem;
+.skills {
+  &_container {
+    min-width: 20rem;
+  }
+  &_skill-title {
+    position: relative;
+    top: 17px;
   }
 }

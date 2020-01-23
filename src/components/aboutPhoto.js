@@ -14,7 +14,7 @@ import Img from 'gatsby-image'
  */
 
 const MyPhoto = () => {
-  const logoData = useStaticQuery(graphql`
+  const aboutPhoto = useStaticQuery(graphql`
     query AboutPhoto {
       imageSharp {
         id
@@ -35,8 +35,9 @@ const MyPhoto = () => {
   return (
     <div className='about_my-photo-container'>
       <Img
+        critical
         style={{ margin: '1rem auto', position: 'initial' }}
-        fluid={logoData.file.childImageSharp.fluid}
+        fluid={aboutPhoto.file.childImageSharp.fluid}
       />
     </div>
   )

@@ -1,6 +1,7 @@
 // initializing all sass variables here so they will be available to all stylesheets
 $medium-down: 'max-width: 768px';
 $medium-up: 'min-width: 768px';
+$text-light-gray: lightgray;
 
 @import 'layout';
 @import 'navigation';
@@ -16,7 +17,8 @@ body {
 .page-content {
   &_title {
     margin: 1rem 0;
-    font-size: 2.5rem;
+    font-weight: 800;
+    font-size: 3.25rem;
   }
   &_wrapper {
     display: flex;
@@ -24,7 +26,10 @@ body {
     flex-direction: column;
   }
   &_block {
-    margin: 1.5rem 4rem;
+    margin: .5rem 18rem;
+    font-size: 1.25rem;
+    line-height: 32px;
+    font-weight: 100;
   }
 }
 
@@ -32,7 +37,9 @@ body {
   .page-content {
     &_title {
       margin: .5rem 0;
-      font-size: 1.75rem;
+      &--home {
+        margin-left: 1rem;
+      }
     }
     &_wrapper {
       display: flex;
@@ -40,16 +47,13 @@ body {
       flex-direction: column;
     }
     &_block {
-      margin: .5rem .25rem;
+      margin: .5rem 1.25rem;
     }
-  }
-  footer {
-    display: none;
   }
 }
 
-footer {
-  position: absolute;
-  right: 1rem;
-  bottom: 0.25rem;
+button {
+  &:active, &:focus {
+    outline: none !important;
+  }
 }

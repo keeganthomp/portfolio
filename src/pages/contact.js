@@ -1,13 +1,12 @@
 import React from 'react'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { FaLinkedin, FaPhone, FaMapMarkerAlt, FaEnvelope, FaGithub } from 'react-icons/fa'
 
 const SOCIAL_ICON_SIZE = '2.5rem'
 
 const Contact = () => (
-  <Layout>
+  <>
     <SEO title='Contact' />
     <div className='page-content_wrapper'>
       <h3 className='page-content_title'>Contact</h3>
@@ -36,7 +35,7 @@ const Contact = () => (
         </div>
       </div>
     </div>
-  </Layout>
+    </>
 )
 
 export default Contact

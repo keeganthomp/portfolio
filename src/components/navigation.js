@@ -3,29 +3,38 @@ import { Link } from 'gatsby'
 import {
   Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
 } from 'reactstrap'
 import Logo from './logo'
+import { HamburgerCollapse } from 'react-animated-burgers'
 
 const Navigation = ({ isHome }) => {
   const [collapsed, setCollapsed] = useState(true)
 
   const toggleNavbar = () => setCollapsed(!collapsed)
+  const handleClick = () => {
+    if (!collapsed) {
+      setCollapsed(true)
+    }
+  }
   return (
     <div>
       <div>
         <Navbar color='faded' light expand='md'>
           <NavbarBrand href='/' className='mr-auto'>
-            <Logo width={'5rem'} />
+            <Logo />
           </NavbarBrand>
-          <NavbarToggler onClick={toggleNavbar} className='mr-2' />
+          <HamburgerCollapse
+            isActive={!collapsed}
+            onClick={toggleNavbar}
+            className='navigation_toggler'
+          />
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
               {!isHome && (
-                <NavItem>
+                <NavItem onClick={() => handleClick()}>
                   <Link
                     className='nav-link'
                     activeClassName='nav-link--active'
@@ -35,7 +44,7 @@ const Navigation = ({ isHome }) => {
                   </Link>
                 </NavItem>
               )}
-              <NavItem>
+              <NavItem onClick={() => handleClick()}>
                 <Link
                   className='nav-link'
                   activeClassName='nav-link--active'
@@ -44,7 +53,7 @@ const Navigation = ({ isHome }) => {
                   Contact
                 </Link>
               </NavItem>
-              <NavItem>
+              <NavItem onClick={() => handleClick()}>
                 <Link
                   className='nav-link'
                   activeClassName='nav-link--active'
@@ -53,7 +62,7 @@ const Navigation = ({ isHome }) => {
                   About
                 </Link>
               </NavItem>
-              <NavItem>
+              <NavItem onClick={() => handleClick()}>
                 <Link
                   className='nav-link'
                   activeClassName='nav-link--active'
@@ -62,16 +71,6 @@ const Navigation = ({ isHome }) => {
                   Skills
                 </Link>
               </NavItem>
-              <span
-                style={{
-                  color: 'rgba(0,0,0,.5)',
-                  fontSize: '14px',
-                  textAlign: 'right',
-                }}
-                className='nav-item_footer'
-              >
-                © {new Date().getFullYear()}, Keegan Thompson
-              </span>
             </Nav>
           </Collapse>
         </Navbar>

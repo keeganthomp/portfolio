@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import MyPhoto from '../components/homepagePhoto'
@@ -9,11 +8,13 @@ import { renderStringFromArray } from '../helpers'
 import '../styles/index.scss'
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title='Home' />
     <MyPhoto />
     <div className='page-content_wrapper'>
-      <h3 className='page-content_title'>Keegan Thompson</h3>
+      <h3 className='page-content_title page-content_title--home'>
+        Keegan Thompson
+      </h3>
       <div className='page-content_block'>
         <p>
           My name is Keegan Thompson and I am a California based software
@@ -26,7 +27,7 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-  </Layout>
+  </>
 )
 
 export default IndexPage

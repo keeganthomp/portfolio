@@ -1,13 +1,12 @@
 import React from 'react'
 
-import Layout from '../components/layout'
 import SEO from '../components/seo'
 import AboutPhoto from '../components/aboutPhoto'
 import { WEB_TECH_OVERVIEW } from '../constants/tech'
 import { renderStringFromArray } from '../helpers'
 
 const About = () => (
-  <Layout>
+  <>
     <SEO title='About' />
     <div className='page-content_wrapper'>
       <AboutPhoto />
@@ -24,7 +23,7 @@ const About = () => (
         </p>
       </div>
     </div>
-  </Layout>
+  </>
 )
 
 export default About
