@@ -32,8 +32,6 @@ const Navigation = ({ isHome }) => {
             isOpen={!collapsed}
             onClick={toggleNavbar}
             className='navigation_toggler'
-            Component='button'
-            type='button'
           />
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
