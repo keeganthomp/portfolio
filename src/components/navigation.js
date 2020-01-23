@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-} from 'reactstrap'
+import { Collapse, Navbar, NavbarBrand, Nav, NavItem } from 'reactstrap'
 import Logo from './logo'
 import { HamburgerCollapse } from 'react-animated-burgers'
+import Burger from '@animated-burgers/burger-slip'
+import '@animated-burgers/burger-slip/dist/styles.css'
+
 
 const Navigation = ({ isHome }) => {
   const [collapsed, setCollapsed] = useState(true)
@@ -26,10 +23,17 @@ const Navigation = ({ isHome }) => {
           <NavbarBrand href='/' className='mr-auto'>
             <Logo />
           </NavbarBrand>
-          <HamburgerCollapse
+          {/* <HamburgerCollapse
             isActive={!collapsed}
             onClick={toggleNavbar}
             className='navigation_toggler'
+          /> */}
+          <Burger
+            isOpen={!collapsed}
+            onClick={toggleNavbar}
+            className='navigation_toggler'
+            Component='button'
+            type='button'
           />
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
