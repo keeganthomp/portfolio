@@ -1,9 +1,27 @@
 import React from 'react'
 
 import SEO from '../components/seo'
-import { FaLinkedin, FaPhone, FaMapMarkerAlt, FaEnvelope, FaGithub } from 'react-icons/fa'
+import {
+  FaLinkedin,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaGithub,
+} from 'react-icons/fa'
 
 const SOCIAL_ICON_SIZE = '2.5rem'
+
+const LINKEDIN_LINK = 'https://www.linkedin.com/in/keeganthompson/'
+const GITHUB_LINK = 'https://github.com/keeganthomp'
+
+const handleEmailClick = () => {
+  window.location = `mailto:whereiskeegan@gmail.com?&subject=Let's Chat!`
+}
+
+const openLinkInNewTab = ({ url }) => {
+  const newTab = window.open(url, '_blank')
+  newTab.focus()
+}
 
 const Contact = () => (
   <>
@@ -17,7 +35,10 @@ const Contact = () => (
           </div>
           <span>San Diego, CA.</span>
         </div>
-        <div className='contact-page_contact-block'>
+        <div
+          onClick={() => handleEmailClick()}
+          className='contact-page_contact-block'
+        >
           <div style={{ width: '2rem' }}>
             <FaEnvelope />
           </div>
@@ -30,12 +51,18 @@ const Contact = () => (
           <span>(334)618-9523</span>
         </div>
         <div className='contact-page_social-container'>
-          <FaLinkedin size={SOCIAL_ICON_SIZE}/>
-          <FaGithub size={SOCIAL_ICON_SIZE}/>
+          <FaLinkedin
+            onClick={() => openLinkInNewTab({ url: LINKEDIN_LINK })}
+            size={SOCIAL_ICON_SIZE}
+          />
+          <FaGithub
+            onClick={() => openLinkInNewTab({ url: GITHUB_LINK })}
+            size={SOCIAL_ICON_SIZE}
+          />
         </div>
       </div>
     </div>
-    </>
+  </>
 )
 
 export default Contact

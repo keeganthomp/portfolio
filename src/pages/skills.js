@@ -6,18 +6,18 @@ import SEO from '../components/seo'
 const SKILLS = [
   {
     name: 'HTML',
-    percent: 100,
+    percent: 99,
   },
   {
     name: 'Sass/CSS',
-    percent: 100,
+    percent: 99,
   },
   {
     name: 'JavaScript/ES6',
     percent: 95,
   },
   {
-    name: 'ReactJS',
+    name: 'ReactJS/Redux',
     percent: 90,
   },
   {
@@ -42,7 +42,7 @@ const SKILLS = [
   },
 ]
 
-const GAUGE_COLOR = '#AFF8DB'
+const GAUGE_COLOR = '#000'
 const GAUGE_WIDTH = '3'
 const TRIAL_WIDTH = '3'
 

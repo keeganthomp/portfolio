@@ -19,7 +19,7 @@ const MyPhoto = () => {
       imageSharp {
         id
       }
-      file(relativePath: { eq: "puppy.jpg" }) {
+      file(relativePath: { eq: "me.jpeg" }) {
         childImageSharp {
           fluid {
             aspectRatio

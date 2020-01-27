@@ -1,6 +1,8 @@
 // initializing all sass variables here so they will be available to all stylesheets
 $medium-down: 'max-width: 768px';
 $medium-up: 'min-width: 768px';
+$medium-large-down: 'max-width: 1024px';
+$green: #AFF8DB;
 $text-light-gray: lightgray;
 
 @import 'layout';
@@ -27,13 +29,13 @@ body {
   }
   &_block {
     margin: .5rem 18rem;
-    font-size: 1.25rem;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 40px;
     font-weight: 100;
   }
 }
 
-@media ($medium-down) {
+@media ($medium-large-down) {
   .page-content {
     &_title {
       margin: .5rem 0;

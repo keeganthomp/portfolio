@@ -22,11 +22,9 @@
     }
     .nav-link {
       background: #fff;
-      transition: background .15s;
+      transition: background .2s;
       color: #000 !important;
       padding: 0.25rem 0.75rem;
-      font-weight: 100;
-      text-transform: uppercase;
       &--active {
         background: #000;
         color: #fff !important;
@@ -46,10 +44,11 @@
 @media ($medium-down) {
   .nav-link {
     &--active {
-      color: #000 !important;
+      color: #333 !important;
     }
-    font-weight: 100;
-    text-transform: uppercase;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
