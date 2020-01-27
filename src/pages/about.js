@@ -32,7 +32,7 @@ const About = () => (
           like bourbon. I have an affinity for skateboarding, motocross,
           surfing, cinema, startups, cannabis, investing, and tech. My interest
           are all over the place. I'm happy to meet new people, so let's grab an
-          old fashioned together some time.
+          old fashioned.
         </p>
         <p>Cheers!</p>
         <ContactButton title={`Let's Grab a Drink!`}/>
