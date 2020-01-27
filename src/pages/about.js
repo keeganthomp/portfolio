@@ -24,18 +24,17 @@ const About = () => (
           thrilled to be a resident of San Diego, California.
         </p>
         <p>
-          Since moving, I have quit my role as a full-time employee and work for
-          myself to fill my entrepreneurial itch. A 9-5 does not suit me. Simply
-          put, working in a cubicle makes me hate life. I have, and always be,
-          entrepreneurial. Aside from working on my business, I enjoy pursuing
-          side projects, working out, puppies, tattoos and bourbon...I really
-          like bourbon. I have an affinity for skateboarding, motocross,
-          surfing, cinema, startups, cannabis, investing, and tech. My interest
-          are all over the place. I'm happy to meet new people, so let's grab an
-          old fashioned.
+          Since moving, I have quit my role as a full-time employee to work for
+          myself. A 9-5 does not suit me. Simply put, working in a cubicle makes
+          me hate life. I have, and always be, entrepreneurial. Aside from
+          working on my business, I enjoy pursuing side projects, working out,
+          puppies, tattoos and bourbon...I really like bourbon. I have an
+          affinity for skateboarding, motocross, surfing, cinema, startups,
+          cannabis, investing, and tech. My interest are all over the place. I'm
+          happy to meet new people, so let's grab an old fashioned.
         </p>
         <p>Cheers!</p>
-        <ContactButton title={`Let's Grab a Drink!`}/>
+        <ContactButton title={`Let's Grab a Drink!`} />
       </div>
     </div>
   </>
