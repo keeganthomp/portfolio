@@ -8,7 +8,7 @@ const ContactButton = ({ title }) => {
   return (
     <div className='contact-button_container'>
       <button onClick={() => openEmail()} className='contact-button'>
-        {title || `Let's Talk!`}
+        {title || `Let's Talk`}
       </button>
     </div>
   )
