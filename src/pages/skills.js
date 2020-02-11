@@ -37,6 +37,10 @@ const SKILLS = [
     percent: 75,
   },
   {
+    name: 'SQL',
+    percent: 65,
+  },
+  {
     name: 'MongoDB',
     percent: 78,
   },
