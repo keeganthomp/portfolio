@@ -1,24 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: `Keegan Thompson`,
-    description: `Keegan Thompson's portfolio`,
+    description: `Full stack developer with a focus on isomorphic JavaScript applications`,
     author: `Keegan Thompson`,
     menuLinks: [
       {
-        name: "Homepage",
-        link: "/",
+        name: 'Homepage',
+        link: '/',
       },
       {
-        name: "About",
-        link: "/about",
+        name: 'About',
+        link: '/about',
       },
       {
-        name: "Contact",
-        link: "/contact",
+        name: 'Contact',
+        link: '/contact',
       },
       {
-        name: "Skills",
-        link: "/skills",
+        name: 'Skills',
+        link: '/skills',
       },
     ],
   },
