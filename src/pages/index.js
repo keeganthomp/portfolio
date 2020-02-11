@@ -17,9 +17,8 @@ const IndexPage = () => (
       </h3>
       <div className='page-content_block'>
         <p>
-          My name is Keegan Thompson and I am a San Diego based full stack
-          developer. Although I can work on both the front-end and backend, my
-          expertise is in front-end development. I enjoy working with creative
+          I am a San Diego based full stack
+          developer. I enjoy working with creative
           entrepreneurs and small business owners who are passionate about their
           work and vision. I have {yearsOfExp}+ years of experience with
           ReactJS, Redux, Sass/CSS, NodeJS, AWS, Postgres, and MongoDB.

@@ -6,11 +6,11 @@ import SEO from '../components/seo'
 const SKILLS = [
   {
     name: 'HTML',
-    percent: 99,
+    percent: 95,
   },
   {
     name: 'Sass/CSS',
-    percent: 99,
+    percent: 90,
   },
   {
     name: 'JavaScript/ES6',
@@ -21,6 +21,10 @@ const SKILLS = [
     percent: 90,
   },
   {
+    name: 'React Native',
+    percent: 68,
+  },
+  {
     name: 'NodeJS',
     percent: 90,
   },
@@ -29,7 +33,15 @@ const SKILLS = [
     percent: 75,
   },
   {
-    name: 'Gatsby',
+    name: 'Postgres',
+    percent: 75,
+  },
+  {
+    name: 'MongoDB',
+    percent: 78,
+  },
+  {
+    name: 'GatsbyJS',
     percent: 75,
   },
   {
